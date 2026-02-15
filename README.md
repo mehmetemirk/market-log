@@ -1,5 +1,43 @@
-Market Log 🚀Market Log, küçük ve orta ölçekli işletmeler için geliştirilmiş, gerçek zamanlı bir depo yönetim ve toptancı satın alma takip sistemidir. Akilay bünyesinde geliştirilen bu proje, stok yönetimini dijitalleştirerek operasyonel hızı artırmayı hedefler.✨ ÖzelliklerGerçek Zamanlı Dashboard: Firebase Firestore entegrasyonu ile anlık stok takibi ve ürün yönetimi.Toptancı Satın Alma Listesi: Eksik ürünlerin toptancı bazlı filtrelenmesi ve durum takibi (Alınacak/Sipariş Verildi).Güvenli Erişim: Firebase Authentication ile şube bazlı güvenli giriş sistemi.Dinamik Arama ve Filtreleme: Ürün ismi veya toptancı adına göre anlık arama (Client-side filtering).Responsive Tasarım: Excalibur G770 ve Surface Pro 4 gibi farklı cihazlarda tam uyumlu kullanım.🛠️ Teknoloji YığınıAlanKullanılan TeknolojilerFrontendReact, Vite, React RouterBackendFirebase Firestore, Firebase AuthStylingModern CSS, Responsive LayoutsEnvironment ManagementVite .env Security🚀 KurulumProjeyi Klonlayın:Bashgit clone https://github.com/mehmetemirk/market-log.git
-cd market-log
-Bağımlılıkları Yükleyin:Bashnpm install
-Çevre Değişkenlerini Yapılandırın:.env.example dosyasını .env.local olarak kopyalayın.Firebase Console'dan aldığınız API anahtarlarını bu dosyaya girin.Uygulamayı Başlatın:Bashnpm run dev
-🔐 Güvenlik NotuProje, hassas verilerin sızmasını önlemek için çevre değişkenleri (.env) kullanılarak yapılandırılmıştır. Gerçek API anahtarları asla GitHub geçmişine dahil edilmez.Geliştirici: Mehmet Emir Karakurt - Yıldız Teknik Üniversitesi, Bilgisayar Mühendisliği.Mühendislik AnaliziProfesyonellik: Kurulum (Installation) adımlarının net olması, projenin "kullanılabilir" olduğunu gösterir.Takım Vizyonu: Akilay takımının lideri olarak bu standartta bir dokümantasyon, takımının marka değerini artırır.
+# Market Log 🚀
+
+**Market Log**, küçük ve orta ölçekli işletmeler için geliştirilmiş, gerçek zamanlı bir depo yönetim ve toptancı satın alma takip sistemidir. Bu proje, **Akilay** bünyesinde stok yönetim süreçlerini dijitalleştirmek ve operasyonel hızı artırmak amacıyla geliştirilmiştir.
+
+## ✨ Öne Çıkan Özellikler
+
+* **Gerçek Zamanlı Dashboard:** Firebase Firestore ile anlık stok takibi ve ürün yönetimi.
+* **Gelişmiş Toptancı Listesi:** Eksik ürünlerin toptancı bazlı filtrelenmesi ve durum yönetimi.
+* **Güvenli Kimlik Doğrulama:** Firebase Auth ile şubelere özel güvenli giriş katmanı.
+* **Akıllı Filtreleme:** Ürün ismi ve satıcıya göre anlık arama (Client-side filtering).
+* **Cihaz Uyumluluğu:** Excalibur G770 ve Surface Pro 4 gibi farklı hardware ekosistemlerinde optimize çalışabilen responsive arayüz.
+
+## 🛠️ Teknoloji Yığını
+
+* **Frontend:** React, Vite, React Router.
+* **Backend:** Firebase (Firestore & Auth).
+* **Güvenlik:** Vite `.env` Environment Variables.
+
+## 🚀 Kurulum ve Çalıştırma
+
+1.  **Projeyi Klonlayın:**
+    ```bash
+    git clone [https://github.com/mehmetemirk/market-log.git](https://github.com/mehmetemirk/market-log.git)
+    cd market-log
+    ```
+
+2.  **Bağımlılıkları Yükleyin:**
+    ```bash
+    npm install
+    ```
+
+3.  **Çevre Değişkenlerini (Environment Variables) Yapılandırın:**
+    * `.env.example` dosyasının adını `.env.local` olarak değiştirin.
+    * İçindeki alanları kendi Firebase API anahtarlarınızla doldurun.
+
+4.  **Geliştirme Sunucusunu Başlatın:**
+    ```bash
+    npm run dev
+    ```
+
+## 🔐 Güvenlik Protokolü
+
+Bu proje, hassas API anahtarlarını korumak için `.env` mimarisini kullanır. Ger
