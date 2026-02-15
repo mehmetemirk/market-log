@@ -1,16 +1,43 @@
-# React + Vite
+# Market Log 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Market Log**, küçük ve orta ölçekli işletmeler için geliştirilmiş, gerçek zamanlı bir depo yönetim ve toptancı satın alma takip sistemidir. Bu proje, **Akilay** bünyesinde stok yönetim süreçlerini dijitalleştirmek ve operasyonel hızı artırmak amacıyla geliştirilmiştir.
 
-Currently, two official plugins are available:
+## ✨ Öne Çıkan Özellikler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Gerçek Zamanlı Dashboard:** Firebase Firestore ile anlık stok takibi ve ürün yönetimi.
+* **Gelişmiş Toptancı Listesi:** Eksik ürünlerin toptancı bazlı filtrelenmesi ve durum yönetimi.
+* **Güvenli Kimlik Doğrulama:** Firebase Auth ile şubelere özel güvenli giriş katmanı.
+* **Akıllı Filtreleme:** Ürün ismi ve satıcıya göre anlık arama (Client-side filtering).
+* **Cihaz Uyumluluğu:** Excalibur G770 ve Surface Pro 4 gibi farklı hardware ekosistemlerinde optimize çalışabilen responsive arayüz.
 
-## React Compiler
+## 🛠️ Teknoloji Yığını
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Frontend:** React, Vite, React Router.
+* **Backend:** Firebase (Firestore & Auth).
+* **Güvenlik:** Vite `.env` Environment Variables.
 
-## Expanding the ESLint configuration
+## 🚀 Kurulum ve Çalıştırma
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1.  **Projeyi Klonlayın:**
+    ```bash
+    git clone [https://github.com/mehmetemirk/market-log.git](https://github.com/mehmetemirk/market-log.git)
+    cd market-log
+    ```
+
+2.  **Bağımlılıkları Yükleyin:**
+    ```bash
+    npm install
+    ```
+
+3.  **Çevre Değişkenlerini (Environment Variables) Yapılandırın:**
+    * `.env.example` dosyasının adını `.env.local` olarak değiştirin.
+    * İçindeki alanları kendi Firebase API anahtarlarınızla doldurun.
+
+4.  **Geliştirme Sunucusunu Başlatın:**
+    ```bash
+    npm run dev
+    ```
+
+## 🔐 Güvenlik Protokolü
+
+Bu proje, hassas API anahtarlarını korumak için `.env` mimarisini kullanır. Ger
